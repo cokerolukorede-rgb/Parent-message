@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val Gift</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Small Note From Me</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:url(./image\ for\ assignment.jpg);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .buttons {
+      margin-bottom: 2rem;
+    }
+
+    button {
+      padding: 0.8rem 1.4rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .mum-btn {
+      background: #f4b6c2;
+      color: #000;
+    }
+
+    .dad-btn {
+      background: #b6c7f4;
+      color: #000;
+    }
+
+    .message {
+      display: none;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>A small note from me</h1>
+    <p class="subtitle">Just something I wanted to say.</p>
+
+    <div class="buttons">
+      <button class="mum-btn" onclick="showMessage('mum')">For Mama 💗</button>
+      <button class="dad-btn" onclick="showMessage('dad')">For Papa 💙</button>
+    </div>
+
+    <!-- Mum Message -->
+    <div id="mum" class="message">
+      <p>
+        Thank you for everything you do for me and for always being there in your own way.<br><br>
+        I know we usually have our own issues, but I appreciate you and the care you’ve shown me.<br><br>
+        I wanted you to know that it doesn’t go unnoticed.
+      </p>
+    </div>
+
+    <!-- Dad Message -->
+    <div id="dad" class="message">
+      <p>
+        Thank you for the support you provide and the role you play in my life.<br><br>
+        I may not always say this, but I appreciate what you do.<br><br>
+        I wanted to take a moment to say that.
+      </p>
+    </div>
+
+    <footer>
+      Atleast, i'mlearnin.
+    </footer>
+  </div>
+
+  <script>
+    function showMessage(parent) {
+      document.getElementById("mum").style.display = "none";
+      document.getElementById("dad").style.display = "none";
+
+      document.getElementById(parent).style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+
